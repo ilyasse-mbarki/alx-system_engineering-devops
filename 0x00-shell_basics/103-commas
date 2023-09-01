@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Ap1 | LC_ALL=C sort -d -t/ -k2,2 -k1,1 | tr '\n' ','
+{ ls -Ap1 | grep -E '/$'; ls -Ap1 | grep -E -v '/$'; } | tr '\n' ','
