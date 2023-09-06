@@ -1,2 +1,2 @@
 #!/bin/bash
-cd echo "$1" | rev
+echo "$1" | tr 'n' 'r'
